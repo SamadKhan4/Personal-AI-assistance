@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Itim&family=Leckerli+One&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Protest+Guerrilla&family=Rye&family=Tangerine:wght@400;700&family=Tourney:wght@500&display=swap');
+*{
+    margin: a;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+}
+#p-img{
+    width: 25rem;
+
+}
+h1{
+    color: aliceblue;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+#name{
+    color: rgb(163, 68, 39);
+    font-size: 45px;
+    text-align: center;
+}
+#pa{
+    color: rgb(172, 117, 36);
+    font-size: 45px;
+    text-align: center;
+}
+#voice{
+    width: 200px;
+    display: none;
+}
+#btn{
+width: 40%;
+background: linear-gradient(to right ,rgba(255, 68, 0, 0.953),rgb(200, 143, 9));
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+font-size: 20px;
+border-radius: 20px;
+color:black;
+box-shadow: 2px 2px 10px rgba(255, 68, 0, 0.953),2px 2px 10px rgb(200, 143, 9);
+border: none;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+#btn:hover{
+    box-shadow: 2px 2px 20px rgba(255, 68, 0, 0.953),2px 2px 20px rgb(200, 143, 9);
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        gap: 1.5rem; /* Reduce gap on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller font size */
+    }
+
+    #name,
+    #pa {
+        font-size: 2rem;
+    }
+
+    #p-img {
+        width: 80%; /* Increase width percentage for smaller screens */
+    }
+
+    #btn {
+        width: 70%; /* Adjust button size */
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (e.g., mobile devices) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+
+    #name,
+    #pa {
+        font-size: 1.8rem;
+    }
+
+    #p-img {
+        width: 90%; /* Fill most of the screen */
+    }
+
+    #btn {
+        width: 80%;
+        font-size: 0.8rem; /* Reduce button font size */
+    }
+}
+/* Footer Styles */
+#footer {
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 68, 0, 0.953), rgb(200, 143, 9));
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+    font-family: "Rye", serif;
+    box-shadow: 0px -2px 10px rgba(255, 68, 0, 0.953), 0px -2px 10px rgb(200, 143, 9);
+}
+
+#footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#footer a:hover {
+    color: black;
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 768px) {
+    #footer p {
+        font-size: 0.9rem;
+    }
+
+    #footer a {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer p {
+        font-size: 0.8rem;
+    }
+
+    #footer a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Header Styles */
+#header {
+    width: 100%;
+    padding: 0rem 1rem;
+    background: linear-gradient(to right, rgba(255, 68, 0, 0.953), rgb(200, 143, 9));
+    display:block ;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(255, 68, 0, 0.953), 0 2px 10px rgb(200, 143, 9);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+#header #logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#header #logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Circular logo */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5) , 0px 2px 5px rgb(36, 121, 239);
+    transition: all 0.5 ease-in-out;
+}
+#header #logo img:hover{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5) , 0px 2px 10px rgb(36, 121, 239);
+}
+#header #logo h1 {
+    color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 1.8rem;
+    cursor: default;
+}
+
+/* Responsive Design for Logo */
+@media screen and (max-width: 768px) {
+    #header #logo h1 {
+        font-size: 1.5rem;
+    }
+
+    #header #logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header #logo h1 {
+        font-size: 1.2rem;
+    }
+
+    #header #logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
